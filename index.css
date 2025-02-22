@@ -1,0 +1,45 @@
+
+  .card-header{
+    font-family: 'Libre Baskerville', serif;
+    /* font-family: 'Scheherazade New', serif; */
+    font-weight: 1000;
+  }
+  .card-body{
+    font-family: 'Libre Baskerville', serif;
+  }
+  .table-container {
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+/* Fix table header */
+table thead {
+    position: sticky;
+    top: 0;
+    background: #343a40; /* Dark background for header */
+    color: white;
+    z-index: 2;
+}
+table thead tr th {
+            position: sticky;
+            top: 0;
+            background: #343a40; /* Dark background for header */
+            color: white;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        /* Sorting Indicators */
+        .sortable::after {
+            content: " 🔼🔽"; /* Sorting arrows */
+            font-size: 0.8rem;
+        }
+
+        .asc::after {
+            content: " 🔼";
+        }
+
+        .desc::after {
+            content: " 🔽";
+        }
